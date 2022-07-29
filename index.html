@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+</head>
+<body>
+    <div class="container">
+     <form id="loca">
+        <label for="nome">Informe seu nome</label>
+        <input class="input-group" type="text" name="nome" id="name">
+        <label for="sobreNome">Informe seu Sobrenome</label>
+        <input class="input-group" type="text" name="sobreNome" id="sobrName">     
+        <input class="btn-primary" type="submit" value="enviar" id="mandar">   
+        <input class="input-group" type="text" name="sobreNome" id="sobrName">     
+        <input class="btn-primary" type="submit" value="enviar" id="mandar">      
+    </form>
+    
+    </div>
+    <table class="table">
+        <tr>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+           
+          </tr>
+          <tr id="tabela">
+            <td></td>
+            <td></td>
+            
+          </tr>
+        
+
+    </table>
+
+
+
+</body>
+<script>
+    let variaveis = [
+        nome = document.querySelector('#name'),
+        sobrenome = document.querySelector('#sobrName')
+    ]
+    let formulario = document.querySelector('#loca')
+
+    let local = document.querySelector('#mandar')
+
+
+    local.addEventListener( "submit", (e) => { 
+        e.preventDefault();
+
+         let nome= variaveis[0].value
+         let sobreNome = variaveis[1].value
+            
+        
+ 
+        } )
+   
+
+</script>
+</html>
